@@ -1,0 +1,47 @@
+@import "variables";
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    img {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+    div {
+        color: #1078AD;
+        font-size: 62px;
+        font-weight: 700;
+    }
+    a {
+        margin-top: 2rem;
+        font-size: 35px;
+        font-weight: 700;
+        color: #fff;
+        background-color: #1078AD;
+        padding: 1rem 3rem;
+        border-radius: .5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .error {
+        img {
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            width: 80%;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .error {
+        img {
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            width: 90%;
+        }
+    }
+}

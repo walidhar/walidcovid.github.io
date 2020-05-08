@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- title -->
+    <title>Page Test : Covid-19</title>
+    <!-- link to css -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/normalize.css">
+    <!-- add jq cdn -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <script>
+            $(function() {
+                $("nav").load("html_sections/navbar.html");
+            });
+        </script>
+    </nav>
+
+    <!-- nabar -->
+
+    <main>
+        <section class="main__inform sect ">
+            <div class="main__tags">
+                <div class="main__tag">
+                    <img class="main__inform__img  main__inform__img--active" src="Design/Assets/svg/active.svg" alt="active">
+                    <h3 class="h3__active">Informations</h3>
+                </div>
+                <div class="main__tag">
+                    <img class="main__inform__img" src="Design/Assets/svg/desactive.svg" alt="desactive">
+                    <h3>Questionnaire</h3>
+                </div>
+                <div class="main__tag">
+                    <img class="main__inform__img" src="Design/Assets/svg/desactive.svg" alt="desactive">
+                    <h3>Résultats</h3>
+                </div>
+            </div>
+            <div class="main__Preambule">
+                <h3>Préambule</h3>
+                <p>« L’application est fournie à titre gratuit, en l’état, uniquement à des fins d’information pour contribuer à fluidifier la prise en charge des personnes par les services d’urgences pendant l’épidémie de Coronavirus COVID-19. L’exhaustivité,
+                    l’exactitude, le caractère à jour des informations et contenus mis à disposition dans cette application, ou leur adéquation à des finalités particulières, ne sont pas garantis.
+                </p>
+                <hr>
+                <p> L’utilisation de l’application et de son contenu ne remplace en aucun cas le conseil nécessaire donné par votre médecin ou votre pharmacien ou tout autre professionnel de santé compétent dans chaque cas particulier. Tout examen ou décision
+                    de l’utilisateur doit être réalisé ou prise de manière autonome sur la base de l’information scientifique et clinique pertinente, de la notice officielle du produit concerné le cas échéant et en cas de doute, en consultant un médecin
+                    compétent. </p>
+            </div>
+            <a href="#" id="demarer">Demarer le test</a>
+        </section>
+        <section class="main__questionnaire sect affiche">
+            <div class="main__tags">
+                <div class="main__tag">
+                    <img class="main__inform__img" src="/Design/Assets/svg/desactive.svg" alt="">
+                    <h3 class="h3__active">Informations</h3>
+                </div>
+                <div class="main__tag">
+                    <img class="main__inform__img  main__inform__img--active" src="/Design/Assets/svg/active.svg" alt="">
+                    <h3>Questionnaire</h3>
+                </div>
+                <div class="main__tag">
+                    <img class="main__inform__img" src="/Design/Assets/svg/desactive.svg" alt="">
+                    <h3>Résultats</h3>
+                </div>
+            </div>
+            <form id="form">
+                <div class="numerotation">
+                    <div class="relative">
+                        <div class="progressbar">
+                        </div>
+                        <progress id="file" max="22"> </progress>
+                    </div>
+                    <p id="afficheNum"></p>
+                </div>
+                <div class="questions">
+
+                </div>
+                <div class="inputs">
+                    <input type="submit" value="precedent" id="precedent">
+                    <input type="submit" value="suivant" id="suivant">
+                    <input type="submit" value="afficher le resultat" id="resultat" class="affiche">
+                </div>
+            </form>
+
+        </section>
+        <section class="main__Resultat sect affiche">
+            <div class="main__tags">
+                <div class="main__tag">
+                    <img class="main__inform__img " src="/Design/Assets/svg/desactive.svg" alt="">
+                    <h3 class="h3__active">Informations</h3>
+                </div>
+                <div class="main__tag">
+                    <img class="main__inform__img" src="/Design/Assets/svg/desactive.svg" alt="">
+                    <h3>Questionnaire</h3>
+                </div>
+                <div class="main__tag">
+                    <img class="main__inform__img main__inform__img--active " src="/Design/Assets/svg/active.svg" alt="">
+                    <h3>Résultats</h3>
+                </div>
+            </div>
+            <div class="affiche__resultat">
+                <h3>Résultat</h3>
+                <p id="affichageResult"> </p>
+                <hr>
+                <span> Restez chez vous au maximum en attendant que les symptômes disparaissent. Prenez votre température deux
+              fois par jour. Rappel des mesures d’hygiène. </span>
+            </div>
+            <input type="submit" value="Recommencer le test" id="repeter">
+        </section>
+    </main>
+    <!-- end quistionaire -->
+
+
+
+    <!-- recommandation -->
+    <section class="recommandation">
+        <div class="recommandation__heading">Recommandations officielles</div>
+        <div class="recommandation__lists"><span>Si vous pensez être malade,</span><br>évitez les endroits publics.<br>Ne rendez pas visite aux personnes fragiles.<br>Évitez de sortir de chez vous.<br>Respectez les mesures barrière (lavage de main, masque).<br>Surveillez vos symptômes,<br>l’évolution
+            de votre température<br>corporelle et recherchez un avis médical.</div>
+        <div class="recommandation__aboutus">
+            <div class="recommandation__aboutus--action">Apple Gratuit</div>
+            <div class="recommandation__aboutus--phone">080 100 47 47</div>
+            <div class="recommandation__aboutus--link"><a href="">www.sante.gov.ma</a></div>
+        </div>
+    </section>
+    <!-- end recommandation -->
+    <!-- footer -->
+    <footer>
+        <script>
+            $(function() {
+                $("footer").load("html_sections/footer.html");
+            });
+        </script>
+    </footer>
+    <script src="/app/js/script.js"></script>
+</body>
+
+</html>

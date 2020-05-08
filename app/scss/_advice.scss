@@ -1,0 +1,281 @@
+@import "variables";
+.proteger {
+    &__heading {
+        font-size: 30px;
+        font-weight: 700;
+        color: #1078AD;
+        text-align: center;
+    }
+    &__container {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+    }
+    &__col1 {
+        &--grp1 {
+            margin-bottom: 2rem;
+        }
+        &--grp2 {
+            margin-bottom: 2rem;
+        }
+        p {
+            text-align: center;
+            color: #1A519E;
+            font-size: 18px;
+            font-size: 700;
+        }
+        img {
+            margin-left: 4rem;
+        }
+    }
+    &__col2 {
+        &--grp1 {
+            margin-bottom: 2rem;
+        }
+        &--grp2 {
+            margin-bottom: 2rem;
+        }
+        p {
+            text-align: center;
+            color: #1A519E;
+            font-size: 18px;
+            font-size: 700;
+        }
+        img {
+            margin-left: 3rem;
+            margin-bottom: 1rem;
+        }
+    }
+    &__col3 {
+        &--grp1 {
+            margin-bottom: 2rem;
+        }
+        &--grp2 {
+            margin-bottom: 2rem;
+        }
+        p {
+            text-align: center;
+            color: #1A519E;
+            font-size: 18px;
+            font-size: 700;
+        }
+        img {
+            margin-left: 3rem;
+            margin-bottom: 1rem;
+        }
+    }
+    &__sy {
+        padding-left: 6rem;
+        text-align: center;
+        margin-top: 1rem;
+        img {
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: .5rem;
+            font-size: 18px;
+            // font-weight: 700;
+            color: #1A519E;
+        }
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .proteger {
+        &__heading {
+            font-size: 25px;
+            font-weight: 700;
+            color: #1078AD;
+            text-align: center;
+            margin-left: 7rem;
+        }
+        &__container {
+            margin-left: 7rem;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__sy {
+            margin-left: 7rem;
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .proteger {
+        &__heading {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1078AD;
+            text-align: center;
+            margin-left: 7rem;
+        }
+        &__container {
+            margin-left: 7rem;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.infoss {
+    width: 100%;
+    height: 277px;
+    background-color: #D0E5F0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    &__left {
+        line-height: 3rem;
+        text-align: center;
+    }
+    &__title {
+        color: #1078AD;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    &__info {
+        color: #1A519E;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    &__link {
+        text-align: center;
+        padding: 15px 30px;
+        background-color: #1078AD;
+        color: #fff;
+        border-radius: 4px;
+    }
+    &__button {
+        text-align: center;
+        padding: 15px 30px;
+        background-color: #1078AD;
+        color: #fff;
+        border-radius: 4px;
+    }
+}
+
+@media only screen and (max-width :502px) {
+    .infoss {
+        width: 500px;
+        height: 277px;
+        background-color: #D0E5F0;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+.sym {
+    &__heading {
+        text-align: center;
+        font-size: 35px;
+        font-weight: 700;
+        color: #1078AD;
+        margin-top: 1rem;
+        margin-left: 3rem;
+    }
+    &__grps {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+    }
+    &__col1 {
+        &--row1 {
+            align-self: center;
+            img {
+                margin-bottom: 1rem;
+                margin-left: 4rem;
+            }
+            p {
+                text-align: center;
+                font-size: 33px;
+                font-weight: 400;
+                color: #000000;
+            }
+        }
+        &--row2 {
+            align-self: center;
+            img {
+                margin-bottom: 1rem;
+                margin-left: 1rem;
+            }
+            p {
+                text-align: center;
+                font-size: 33px;
+                font-weight: 400;
+                color: #000000;
+            }
+        }
+    }
+    &__col2 {
+        &--row1 {
+            margin-top: 2rem;
+            align-self: center;
+        }
+        &--row2 {
+            margin-top: 2rem;
+            align-self: center;
+        }
+        img {
+            margin-bottom: 1rem;
+            margin-left: 4rem;
+        }
+        p {
+            text-align: center;
+            font-size: 33px;
+            font-weight: 400;
+            color: #000000;
+        }
+    }
+}
+
+.transmet {
+    &__heading {
+        color: #1078AD;
+        font-size: 35px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    &__side {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        padding-right: 2rem;
+    }
+    &__left {
+        text-align: center;
+        font-size: 26px;
+        font-weight: 700;
+        color: #1A519E;
+    }
+    &__right {
+        text-align: center;
+        font-size: 26px;
+        font-weight: 700;
+        color: #1A519E;
+    }
+}

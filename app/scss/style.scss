@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+@import "acceuil";
+@import "advice";
+@import "variables";
+@import "404";
+@import "test";
+@import "quiz1";
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    // max-width: 1440px;
+    font-family: "Cairo", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    text-decoration: none;
+}

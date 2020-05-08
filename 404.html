@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- link to css -->
+    <link rel="stylesheet" href="/src/css/404.css">
+    <link rel="stylesheet" href="/src/css/normalize.css">
+    <!-- title -->
+    <title>404 : Covid-19</title>
+    <!-- link to jq library -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <script>
+            $(function() {
+                $("nav").load("html_sections/navbar.html");
+            });
+        </script>
+    </nav>
+    <!-- end navbar -->
+    <section class="error"><img src="Design/Assets/png/404.png" alt="404">
+        <div class="error__perdu">tu es perdu</div><a class="error__retourner" href="acceuil.html">retourner à l'accueil</a></section>
+    <footer>
+        <script>
+            $(function() {
+                $("footer").load("html_sections/footer.html");
+            });
+        </script>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
